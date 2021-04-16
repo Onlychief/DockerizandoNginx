@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+    paginahtml:
+        build:   
+            context: ./
+            dockerfile: Dockerfile
+        container_name: paginahtml
+        restart: always
+        ports: 
+            - 8100:80
+        image: nginx
+    
